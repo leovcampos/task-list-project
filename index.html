@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Minha Lista de Tarefas</h1>
-    </header>
-
-    <main>
-        <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-        <section>
-            <input type="text" id="texto-tarefa">
-            <button id="criar-tarefa" onclick="addElement()">Adicionar</button>
-            <ol id="lista-tarefas"></ol>
-        </section>
-
-        <section>
-            <button id="apaga-tudo" onclick="deleteList()">Apagar</button>
-            <button id="remover-finalizados" onclick="removeCompleted()">Apagar Finalizados</button>
-            <button id="salvar-tarefas">Salvar</button>
-            <button id="mover-cima">Move-up</button>
-            <button id="mover-baixo">Move-dwon</button>
-            <button id="remover-selecionado">Remover</button>
-        </section>
-    </main>
+    <div>
+        <header>
+            <h1>Minha Lista de Tarefas</h1>
+        </header>
+        <main>
+            <ul>
+                <li>Adicione uma tarefa a lista</li>
+                <li>Clique uma vez para marcar a tarefa como importante</li>
+                <li>Clique duas vezes em um item para marcá-lo como completa</li>
+            </ul>
+            <!-- <p>Adicione uma tarefa a lista</p>
+            <p>Clique uma vez para marcar a tarefa como importante</p>
+            <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completa</p> -->
+            <section>
+                <input type="text" id="texto-tarefa" placeholder="digite sua tarefa">
+                <button id="criar-tarefa" onclick="addElement()">Adicionar</button>
+                <ol id="lista-tarefas"></ol>
+            </section>
+            <section>
+                <button id="apaga-tudo" onclick="deleteList()">Apagar</button>
+                <button id="remover-finalizados" onclick="removeCompleted()">Apagar Finalizados</button>
+                <button id="salvar-tarefas">Salvar</button>
+                <button id="mover-cima">&uArr;</button>
+                <button id="mover-baixo">&dArr;</button>
+                <button id="remover-selecionado">Remover</button>
+            </section>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

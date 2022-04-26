@@ -1,0 +1,13 @@
+.Spotlight{
+    background-color: gray;
+    padding: 5px;
+    margin-right: 300px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through solid black;
+}
